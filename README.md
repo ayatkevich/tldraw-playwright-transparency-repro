@@ -1,6 +1,6 @@
 # tldraw Playwright Transparency Repro
 
-Minimal Vite + React + tldraw + Playwright project for a Playwright-only tldraw background issue.
+Minimal Vite + React + tldraw + Playwright UI Mode project for inspecting a Playwright-only tldraw background issue.
 
 ## Reproduction
 
@@ -9,22 +9,9 @@ npm install
 npm run test:e2e:ui
 ```
 
-Open the `tldraw-background.spec.ts` test in Playwright UI mode. The expected canvas background is the default tldraw beige background. In Playwright, the startup timeline can show a white spinner state and then the canvas appears transparent in the trace/screenshot viewer.
+Run the `renders the tldraw page` test in Playwright UI Mode. The test opens the tldraw page, waits for the canvas to mount, and pauses so the browser remains available for manual inspection.
 
-The test records:
-
-- Playwright trace artifacts.
-- `omitBackground: true` screenshots at navigation commit, early startup delays, loaded state, and 3s/10s settled states.
-- `background-samples.json` with computed background styles for the element stack at the center of the viewport.
-
-## Commands
-
-```sh
-npm run dev
-npm run test:e2e
-npm run test:e2e:headed
-npm run test:e2e:ui
-```
+`npm run test:e2e` is also mapped to Playwright UI Mode.
 
 ## Exact Package Versions
 
