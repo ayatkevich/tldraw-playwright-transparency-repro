@@ -9,7 +9,7 @@ npm install
 npm run test:e2e:ui
 ```
 
-Run the `renders the tldraw page` test in Playwright UI Mode. The test opens the tldraw page, waits for the canvas to mount, and pauses so the browser remains available for manual inspection.
+Run the `renders the tldraw page` test in Playwright UI Mode. The test opens the tldraw page, waits for the canvas to mount, lets the default UI settle briefly, and pauses so the browser remains available for manual inspection.
 
 `npm run test:e2e` is also mapped to Playwright UI Mode.
 
