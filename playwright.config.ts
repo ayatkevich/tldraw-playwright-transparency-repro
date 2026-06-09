@@ -18,7 +18,7 @@ export default defineConfig({
   ],
   webServer: {
     command: 'npm run dev -- --host 127.0.0.1 --port 42817 --strictPort',
-    reuseExistingServer: false,
+    reuseExistingServer: true,
     url: 'http://127.0.0.1:42817',
   },
 })
