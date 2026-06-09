@@ -1,0 +1,17 @@
+.app-shell {
+  background: #f4f0e8;
+  position: fixed;
+  inset: 0;
+}
+
+.app-marker {
+  position: fixed;
+  z-index: 1000;
+  top: 8px;
+  left: 8px;
+  padding: 4px 6px;
+  background: #b8ff4d;
+  color: #0f172a;
+  font: 12px/1.2 system-ui, sans-serif;
+  pointer-events: none;
+}
